@@ -1,12 +1,15 @@
-# Naive Sudoku Solver
+# Naive BackTracking Sudoku Solver
 
-The naive algorithm replaces the empty spaces with a digit which is not present in the given row or column or the 3x3 square it is in. After repeating it for every empty spaces, if it is correct, it will be displayed or else, it will be repeated again with different digits, depending on the problem, it may only repeat itself 20 times, or even 20,000 times!! 
+The naive algorithm replaces the empty spaces with a digit which is not present in the given row or column or the 3x3 square it is in. It tries to place digits 1-9, if it fits, it moves to next cell and repeats, if the algorithm fails to fit a number, it backtracks to the previous cell and change its digit and tries again, this is the naive backtracting sudoku solver!!.
 
 # Requirments:
 - Python
   
 ## Usage
 NOTE: there are two pre-defined sudokus namely, matrix and matrix2, change the argument passed in the function to get desired output of the sudoku
+
+## Future updates
+- add a GUI for better visuals
 
 ## Contributing
 
